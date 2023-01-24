@@ -28,3 +28,6 @@ int SecondDigit(int number)
     int result = ((number / 10) % 10);
     return result;
 }
+
+
+
