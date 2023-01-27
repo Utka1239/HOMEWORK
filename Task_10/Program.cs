@@ -16,13 +16,11 @@ else
 {
     Console.WriteLine(SecondDigit(number));
 }
-
 int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
-
 int SecondDigit(int number)
 {
     int result = ((number / 10) % 10);
