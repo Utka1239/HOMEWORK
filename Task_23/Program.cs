@@ -6,9 +6,23 @@
 5 -> 1, 8, 27, 64, 125
 */
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// for (int i = 1; i <= number; i++)
+// {
+//     Console.Write($"{i * i * i},");
+// }
+
+int number = ReadInt("Введите число: ");
+
 for (int i = 1; i <= number; i++)
 {
-    Console.Write($"{i * i * i},");
+    Console.Write($"{i * i * i}, ");
+}
+
+// Метод
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
